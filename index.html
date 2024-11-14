@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Economia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <div class="container">
+        <div class="quiz-header">
+            <h1 class="animate__animated animate__fadeInDown">Quiz de Economia</h1>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Pontuação</span>
+                    <span id="pontuacao" class="stat-value">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Tempo</span>
+                    <span id="tempo" class="stat-value">00:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="progresso animate__animated animate__fadeIn">
+            <div class="barra-progresso">
+                <div id="progresso-atual"></div>
+            </div>
+            <div class="progresso-info">
+                <span id="contador-questao">Questão 1 de X</span>
+                <span id="dificuldade" class="badge">Fácil</span>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="animate__animated animate__fadeIn"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
